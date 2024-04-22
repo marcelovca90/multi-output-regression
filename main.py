@@ -20,7 +20,7 @@ automl = AutoSklearnRegressor(time_left_for_this_task=300,
                               n_jobs=1,
                               seed=42)
 
-automl.fit(X_train, y_train, dataset_name='synthetic')
+automl.fit(X_train, y_train, dataset_name='fas_reduced')
 
 print('\nLeaderboard\n')
 print(automl.leaderboard())
