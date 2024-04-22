@@ -18,6 +18,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 automl = AutoSklearnRegressor(time_left_for_this_task=300,
                               per_run_time_limit=60,
+                              memory_limit=8*1024,
                               seed=42)
 
 automl.fit(X_train, y_train, dataset_name='synthetic')
