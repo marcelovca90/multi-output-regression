@@ -1,4 +1,3 @@
-import numpy as numpy
 import pandas as pd
 from pprint import pprint
 
